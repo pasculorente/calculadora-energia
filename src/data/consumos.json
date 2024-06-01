@@ -1,0 +1,68 @@
+[
+  {
+    "nombre": "Enero",
+    "dias": 31,
+    "energia": { "punta": 34, "llano": 40, "valle": 77 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Febrero",
+    "dias": 28,
+    "energia": { "punta": 33, "llano": 35, "valle": 71 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Marzo",
+    "dias": 11,
+    "energia": { "punta": 12, "llano": 11, "valle": 32 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Marzo (2)",
+    "dias": 20,
+    "energia": { "punta": 17.88, "llano": 15.49, "valle": 39.14, "excedentes": 80.79 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Abril",
+    "dias": 30,
+    "energia": { "punta": 22.6, "llano": 24.89, "valle": 60.14, "excedentes": 145.06 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Mayo",
+    "dias": 31,
+    "energia": { "punta": 21, "llano": 24, "valle": 52 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Julio",
+    "dias": 31,
+    "energia": { "punta": 32, "llano": 31, "valle": 118 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Septiembre",
+    "dias": 30,
+    "energia": { "punta": 29, "llano": 31, "valle": 92 },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Octubre",
+    "dias": 31,
+    "energia": { "punta": 36, "llano": 38, "valle": 147  },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Noviembre",
+    "dias": 30,
+    "energia": { "punta": 26, "llano": 28, "valle": 54  },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  },
+  {
+    "nombre": "Diciembre",
+    "dias": 31,
+    "energia": { "punta": 32, "llano": 36, "valle": 97  },
+    "potencia": { "punta": 3.45, "valle": 3.45 }
+  }
+]

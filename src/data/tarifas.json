@@ -1,0 +1,44 @@
+[
+  {
+    "comercializadora": "Octopus Energy",
+    "nombre": "Relax",
+    "energia": {
+      "punta": 0.124,
+      "valle": 0.124,
+      "llano": 0.124,
+      "excedentes": 0.0
+    },
+    "potencia": {
+      "punta": 32.49,
+      "valle": 8.03
+    }
+  },
+  {
+    "comercializadora": "Octopus Energy",
+    "nombre": "Compra Colectiva Grinch 2024 (3 franjas)",
+    "energia": {
+      "punta": 0.1711,
+      "llano": 0.1153,
+      "valle": 0.0827,
+      "excedentes": 0.05
+    },
+    "potencia": {
+      "punta": 25.39,
+      "valle": 0.97
+    }
+  },
+  {
+    "comercializadora": "Octopus Energy",
+    "nombre": "3 Exclusiva",
+    "energia": {
+      "punta": 0.189,
+      "llano": 0.137,
+      "valle": 0.106,
+      "excedentes": 0.05
+    },
+    "potencia": {
+      "punta": 30.30,
+      "valle": 5.11
+    }
+  }
+]
