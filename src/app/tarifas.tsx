@@ -1,7 +1,18 @@
+import { Form } from "react-bootstrap";
 import { Mapper } from "../components/table/types";
 import { Tarifa } from "./types";
 
 export const mappers: Mapper<Tarifa>[] = [
+  {
+    name: "M",
+    expr: (t: Tarifa, callback) => {
+      function change() {
+        t.mostrar = !t.mostrar;
+        callback();
+      }
+      return <Form.Switch checked={t.mostrar} onChange={change} />;
+    },
+  },
   {
     name: "Comercializadora",
     expr: (t: Tarifa) => t.comercializadora,
@@ -38,6 +49,6 @@ export const mappers: Mapper<Tarifa>[] = [
   {
     name: "Energia (€/kWh)",
     subname: "E",
-    expr: (c) => c.energia.excedentes.toFixed(4),
+    expr: (c) => c.energia.excedentes!.toFixed(4),
   },
 ];

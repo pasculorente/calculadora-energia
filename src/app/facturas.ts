@@ -22,7 +22,8 @@ export class Factura {
       this.energia.punta += tarifa.energia.punta * cons.energia.punta;
       this.energia.llano += tarifa.energia.llano * cons.energia.llano;
       if (tarifa.energia.excedentes && cons.energia.excedentes)
-        this.energia.excedentes! += tarifa.energia.excedentes * cons.energia.excedentes;
+        this.energia.excedentes! +=
+          tarifa.energia.excedentes * cons.energia.excedentes;
       this.potencia.punta +=
         (tarifa.potencia.punta * cons.potencia.punta * cons.dias) / 365;
       this.potencia.valle +=
@@ -75,7 +76,7 @@ export const mappers: Mapper<Factura>[] = [
   {
     name: "Energia (€)",
     subname: "E",
-    expr: (c) => (-c.energia.excedentes).toFixed(2),
+    expr: (c) => (-c.energia.excedentes!).toFixed(2),
   },
   {
     name: "BS",

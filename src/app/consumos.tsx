@@ -1,6 +1,17 @@
+import { Form } from "react-bootstrap";
 import { Mapper } from "../components/table/types";
 import { Consumo } from "./types";
 export const mappers: Mapper<Consumo>[] = [
+  {
+    name: "M",
+    expr: (c: Consumo, update) => {
+      function change() {
+        c.mostrar = !c.mostrar;
+        update();
+      }
+      return <Form.Switch checked={c.mostrar} onChange={change} />;
+    },
+  },
   {
     name: "Concepto",
     expr: (c) => c.nombre,
@@ -33,7 +44,7 @@ export const mappers: Mapper<Consumo>[] = [
   {
     name: "Energia (kWh)",
     subname: "E",
-    expr: (c) => c.energia.excedentes? c.energia.excedentes.toFixed(2) : "",
+    expr: (c) => (c.energia.excedentes ? c.energia.excedentes.toFixed(2) : ""),
   },
   {
     name: "Días",

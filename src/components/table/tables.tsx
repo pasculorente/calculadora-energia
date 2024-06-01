@@ -16,14 +16,16 @@ function groupBy<T extends { [key: string]: string | number | unknown }>(
 export function TableData<T>({
   data,
   mappers,
+  update,
 }: {
   data: T[];
   mappers: Mapper<T>[];
+  update?: CallableFunction;
 }) {
   let key = 0;
   const rows = data.map((item: T) => {
     const cells = mappers.map((m: Mapper<T>) => (
-      <td key={"td_" + key++}>{m.expr(item)}</td>
+      <td key={"td_" + key++}>{m.expr(item, update)}</td>
     ));
     return <tr key={"tr_" + key++}>{cells}</tr>;
   });
@@ -39,7 +41,10 @@ export function TableData<T>({
     const row2 = groups.flatMap((g) =>
       g[1].map((w) => <th key={"th_" + key++}>{w.subname}</th>),
     );
-    headerRows = [<tr>{row1}</tr>, <tr>{row2}</tr>];
+    headerRows = [
+      <tr key={"tr_" + key++}>{row1}</tr>,
+      <tr key={"tr_" + key++}>{row2}</tr>,
+    ];
   } else {
     const headerRow: React.ReactElement[] = mappers.map((m) => (
       <th key={"th_" + key++}>{m.name}</th>
